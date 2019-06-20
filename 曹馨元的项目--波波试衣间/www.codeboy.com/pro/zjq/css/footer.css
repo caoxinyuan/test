@@ -1,0 +1,47 @@
+#promise,
+#promise{
+	width:inherit;
+	background:#bbb;
+	padding:20px 200px;
+	box-sizing:border-box;
+}
+#promise>ul{
+	display:flex;
+	justify-content:space-between;
+}
+#promise>ul>li>img{
+	float:left;
+}
+#promise>ul>li>div{
+	float:left;
+	position:relative;
+	top:13px;
+}
+#promise>ul>li>div>p:first-child{
+	font-size:20px;
+	color:white;
+}
+#promise>ul>li>div>p:last-child{
+	color:#eee;
+}
+.footer{
+	width:inherit;
+	padding:10px 0  5px 0;
+	background:#ddd;
+	box-sizing:border-box;
+}
+.footer>div>ul{
+	width:680px;
+	margin:0px auto;
+}
+.footer>div>ul>li{
+	float:left;
+	padding:3px 10px;
+}
+.footer>div>ul>li:not(:last-child){
+	border-right:1px solid #666;
+}
+.footer>p{
+	margin:10px 0;
+	text-align:center;
+}

@@ -1,0 +1,64 @@
+		;$(function(){
+			$("#header").load("header.html",function(html){
+				var link=`<link rel="stylesheet" href="css/header.css" />
+									<link rel="icon" href="imgs/favicon.ico" />`;
+				$(link).appendTo($("head"));
+				var $btnSearch=$(".head_search>a>img");
+				var $txtSearch=$(".head_search>input");
+				//搜索框搜索点击事件
+				$btnSearch.click(function(){
+					if($txtSearch.val().trim()!=="")
+						location.href="products.html@kw="+$txtSearch.val().trim();
+				});
+				//虚拟按钮默认触发点击事件
+				$txtSearch.keyup(function(e){
+					if(e.keyCode===13)
+						$btnSearch.click();
+				});
+				if(location.search.indexOf("kw=")!=-1){
+					$txtSearch.val(decodeURI(location.search.split("=")[1]))	
+				}
+				//判断是否已登录,登录显示欢迎,未登录显示登录
+				$.ajax({
+					type:"get",
+					url:"data/users/islogin.php",
+					dataType:"json",
+					success:function(data){
+						if(data.ok==0){
+							$("#loginList").show().next().hide();
+						}else{
+							$("#loginList").hide().next().show()
+								.find("#uname").html(data.uname)
+								.parent().parent().next().children(":first").attr("src",data.avatar);
+						}
+					}
+				});
+				//登录点击事件,获取到上一页的网址
+				$("#login").click(function(){
+					location.href="login.html@back="+location.href;
+				});
+				//注册点击事件,获取到上一页的网址
+				$("#register").click(function(){
+					location.href="register.html@back="+location.href;
+				});
+				//退出点击事件
+				$("#signout").click(function(e){
+					e.preventDefault();
+					$.ajax({
+						type:"get",
+						url:"data/users/signout.php",
+						success:function(){
+							location.reload(true);
+						}
+					})
+				});
+				//用户头像.关于我们hover事件
+				$("#user,#about_us").hover(function(){
+					$(this).children(":last").toggleClass("in");
+				});
+				$("#user>ul,#about_us>ul").on("mouseenter","li",function(){
+					$(this).addClass("hover").siblings().removeClass("hover");
+				});
+			})
+		});
+		

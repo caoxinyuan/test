@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户结算</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/pay.css">
+</head>
+<body>
+	<header id="header">
+		<img src="imgs/loading.gif" alt="加载中">
+	</header>	
+	<div class="main">
+		<div class="sure-address">
+			<h4>确认收货地址<a href="javascript:;" class="newAddress">添加新地址</a></h4>
+			<ul>
+				<!--<li class="default">
+					<p><textarea  rows="1" disabled name="userName">杰克</textarea></p>
+					<p><textarea  rows="1" disabled name="tel">13688888888</textarea></p>
+					<p><textarea name="address" rows="2" disabled>重庆市渝北区红旗河沟嘉州协信中心A栋18楼</textarea></p>
+					<p>
+						<span class="lf is-default">默认地址</span>
+						<a href="javascript:;">设为默认 | </a>
+						<a href="javascript:;" class="edit">编辑 | </a>
+						<a href="javascript:;" class="del">删除</a>	
+					</p>
+				</li>-->
+				<h1>您未添加任何收件地址</h1>
+			</ul>
+		</div>
+		<hr>
+		<div class="sure-express">
+			<h4>确认物流方式</h4>
+			<ul>
+				<li class="default">
+					<i style="background-position:0px -468px;"></i>
+					<span>圆通</span>
+				</li>
+				<li>
+					<i style="background-position:0px -1008px;"></i>
+					<span>申通</span>
+				</li>
+				<li>
+					<i style="background-position:0px -576px;"></i>
+					<span>韵达</span>
+				</li>
+				<li>
+					<i style="background-position:0px -324px;"></i>
+					<span>中通</span>
+				</li>
+				<li>
+					<i style="background-position:0px -180px;"></i>
+					<span>顺丰</span>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sure-payout">
+			<h4>确认支付方式</h4>
+			<ul>
+				<li class="default"><img src="imgs/cart/weixin.jpg" alt=""><span>微信支付</span></li>
+				<li><img src="imgs/cart/zhifubao.jpg" alt=""><span>支付宝</span></li>
+				<li><img src="imgs/cart/wangyin.jpg" alt=""><span>网银支付</span></li>
+			</ul>
+		</div>
+		<hr>
+		<div class="sure-info">
+			<h4>确认订单信息</h4>
+			<ul class="title">
+				<li class="info-pro">商品</li>
+				<li class="info-price">单价</li>
+				<li class="info-num">数量</li>
+				<li class="info-total">金额</li>
+				<li class="info-path">配送方式</li>
+			</ul>
+			<div class="info">
+				<!-- <ul>
+					<li class="info-pro">
+						<a href=""><img src="imgs/pro-imgs/sm/cid=1-1.jpg" alt=""></a>
+						<div class="rt">
+							<p>
+								<a href="product_details.html?lid=">七匹狼短袖T恤男2018年夏装新款男装多彩POLO衫男士纯棉翻领半袖t恤衫2057 黑色 175/92A(XL)</a>
+							</p>
+							<i><span class="spec">颜色：<u>黑色</u></span>&nbsp;||&nbsp;<span class="size">尺寸：<u>175/92A(XL)</u></span></i>
+						</div>
+					</li>
+					<li class=" info-price"><span class="price">$128.00</span></li>
+					<li class="info-num">
+						<button class="reduce">-</button>
+						<input type="text" value="1" class="cart-count">
+						<button class="add">+</button>
+					</li>
+					<li class="info-total"><span class="price">$128.00</span></li>
+					<li class="info-path">包邮</li>	
+				</ul> -->
+				<h1 align='center'>您未选中任何商品 <small><a href="cart.html" style="color:#e4393c">前往购物车添加</a></small></h1>
+			</div>
+			<p>买家留言：<input type="search" class="pay-msg" placeholder="选填，建议填写与卖家说明达成一致的内容"></p>
+			<p class="total">合计（含运费）：<span class="color">￥0.00</span></p>
+		</div>
+		<div class="info-price clear">
+				<div class="rt">
+					<p><b>实付款：</b><span class="color pay-price">￥0.00</span></p>
+				</div>
+		</div>
+		<div class="submitInfo clear"><a href="default.htm" class="rt">提交订单</a></div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/pay.js"></script>
+</body>
+</html>

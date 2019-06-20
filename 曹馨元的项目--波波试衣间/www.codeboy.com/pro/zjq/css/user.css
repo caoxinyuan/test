@@ -1,0 +1,307 @@
+	.user-center{
+		display:flex;
+		justify-content:space-between;
+		margin-bottom:30px;
+	}
+	.user-center h3{
+		padding-bottom:10px;
+		border-bottom:2px solid #f40;
+		color:#f40;
+	}
+	.user-left,.user-right{
+		padding:10px;
+		background:#fff;
+	}
+/*********************用户中心左侧******************/
+	.user-left{
+		width:150px;
+		text-align:center;
+	}
+
+	.user-left>ul>li{
+		margin-top:20px;
+	}
+	.user-left>ul>li>ul>li.active>a{
+		color:#000;
+		font-weight:bold;
+		padding-left:6px;
+		border-left:5px solid #f40;
+	}
+	.user-left>ul>li>ul>li{
+		margin-top:15px;
+		font-size:14px;
+	}
+/********************用户中心右侧***********************/
+	.user-right{
+		width:1050px;
+	}
+	.user-right ul{
+		margin-top:30px;
+	}	
+	.user-right h4>span{
+		color:#f40;
+		padding:7px 0;
+		border-bottom:2px solid #f40;
+	}
+/***********************个人信息************************/
+	#user-info>ul>li:not(:first-child){
+		margin-top:25px;
+		margin-left:250px;
+	}
+	.user-right ul>li.user-base-info{
+		border-bottom:2px solid #ddd;
+		margin:0 auto;
+		width:300px;
+		margin-bottom:30px;
+		padding-bottom:10px;
+		padding-left:10px;
+	}	
+	.user-right ul>li.user-base-info>div.user-avatar{
+		position:relative;
+		width:100px;
+		height:100px;
+		overflow:hidden;
+	}
+	.user-right ul>li.user-base-info>.user-avatar img{
+		vertical-align:middle;
+		border-radius:50%;
+		width:100px;height:100px;
+		position:absolute;
+		top:0;left:0;
+	}
+	#user-info>ul>li>.user-avatar input{
+		opacity:0;
+		position:absolute;
+		top:0;left:0;
+		width:100%;
+		height:100%;
+		z-index:10;
+		cursor:pointer;
+	}
+	.user-right ul>li.user-base-info>.uname>p{
+		margin-left:20px;
+		margin-top:15px;
+	}
+	#user-info>ul>li>b{
+		width:120px;
+	}
+	#user-info>ul>li>input{
+		width:400px;
+		height:30px;
+		padding-left:10px;
+		background:#fff;
+		border:1px solid #aaa;
+	}
+	#user-info>ul>li.user-gender>input{
+		width:13px;
+		height:13px;
+	}
+	#user-info>ul>li>.bgcolor{
+		width:100px;
+		height:30px;
+		margin-left:200px;
+		margin-top:20px;
+		border-radius:15px;
+	}
+/*****************安全中心--主页*******************/
+	#user-safety>ul>li:not(:first-child){
+		margin-top:25px;
+		margin-left:80px;
+	}
+	#user-safety>ul>li>i{
+		display:inline-block;
+		width:40px;
+		height:40px;
+		position:relative;
+		top:3px;
+		background:url(../imgs/user/sprite.png) no-repeat;
+	}
+	#user-safety>ul>li:not(:first-child)>div{
+		display:inline-block;
+		width:780px;
+		margin-left:5px;
+	}
+	#user-safety>ul>li>div>:first-child{
+		font-size:15px;
+	}
+	#user-safety>ul>li>a{
+		width:70px;height:30px;
+		line-height:30px;
+		text-align:center;
+		background:#f40;
+		color:white;
+		border:0;
+		border-radius:5px;
+	}
+/****************安全中心--修改密码*************/
+	#user-safety>.progress{
+		position:relative;
+		margin:0 auto;
+		width:600px;
+		height:10px;
+		background:#ddd;
+		margin-bottom:50px;
+	}
+	#user-safety>.progress>p{
+		position:absolute;
+		top:-8px;
+		width:65px;
+	}
+	#user-safety>.progress>p>i{
+		display:block;
+		margin:0 auto;
+		width:20px;height:20px;
+		border-radius:50%;
+		background:#eee;
+		text-align:center;
+		line-height:20px;
+		border:5px solid #ddd;
+		font-style:normal
+	}
+	#user-safety>.progress>p>i.on{
+		background:#23C279;
+		color:white;
+	}
+	#user-safety>.progress>p:first-child{
+		left:-30px;
+	}
+	#user-safety>.progress>p:last-child{
+		right:-30px;
+	}
+	#user-safety>.modify{
+		width:400px;
+		margin:0 auto;
+	}
+	#user-safety>.modify>p{
+		margin-top:20px;
+	}
+	#user-safety>.modify>p>b{
+		width:90px;
+		text-align:right;
+	}
+	#user-safety>.modify>p>input{
+		width:300px;
+		height:30px;
+		padding-left:5px;
+		border:1px solid #ddd;
+	}
+	#user-safety>.modify>p>button{
+		width:100px;
+		height:30px;
+		margin-left:150px;
+		border-radius:15px;
+	}
+/**************修改支付密码******************/
+	#user-safety>.modify.pay-pwd>p:nth-child(2)>input
+	,#user-safety>.modify.pay-pwd>p:nth-child(1)>input{
+		width:200px;
+	}
+	#user-safety>.modify.pay-pwd>p a{
+		padding:6px 12px;
+		border-radius:5px;
+		color:#fff;
+	}
+/**************修改手机号码******************/
+	#user-safety>.modify.bind-phone>p:nth-child(2)>input
+	,#user-safety>.modify.bind-phone>p:nth-child(4)>input{
+		width:200px;
+	}
+	#user-safety>.modify.bind-phone>p a{
+		padding:6px 12px;
+		border-radius:5px;
+		color:#fff;
+	}
+/**************修改邮箱******************/
+	#user-safety>.modify.set-email>p:nth-child(2)>input{
+		width:200px;
+	}
+	#user-safety>.modify.set-email>p a{
+		padding:6px 12px;
+		border-radius:5px;
+		color:#fff;
+	}
+/*********************地址管理****************/
+	#user-address>div>p{
+		color:black;
+		text-align:center;
+		border-bottom:1px solid #ddd;
+		padding-bottom:10px;
+	}
+	.address-list>ul{
+		text-align:center;
+	}
+	.address-list>ul>li{
+		display:inline-block;
+		width:252px;
+		height:151px;
+		padding:5px;
+		background:url(../imgs/cart/address.png) no-repeat;
+		box-sizing:border-box;
+		margin-right:5px;
+		margin-bottom:5px;
+		overflow:hidden;
+	}
+	.address-list>ul>li.default{
+		background:url(../imgs/cart/addressd.png) no-repeat;
+	}
+	.address-list>ul>li>p{
+		margin:3px 0;
+	}
+	.address-list>ul>li>p>textarea{
+		display:inline-block;
+		border:none;
+		font-weight:bold;
+		font-size:15px;
+		min-width:230px;
+		max-width:235px;
+		color:black;
+		background:#fff;
+		max-height:40px;
+	}
+	.address-list>ul>li>:last-child{
+		margin-top:10px;
+		text-align:right;
+	}
+	.address-list>ul>li>:last-child>:first-child,
+	.address-list>ul>li>:last-child>:nth-child(2){
+		display:none;
+	}
+	.address-list>ul>li>:last-child>:first-child.is-default{
+		padding:3px;
+		background:#ddd;
+		display:inline-block;
+	}
+	.address-list>ul>li>:last-child>:nth-child(2).select-default{
+		display:inline-block;
+	}
+	.add-address>p{
+		margin:20px auto;
+	}
+	.add-address>div{
+		margin:0 auto;
+		width:600px;
+	}
+	.add-address>div>p{
+		margin-top:10px;
+		margin-left:66px;
+	}
+	.add-address>div>p>input{
+		border:1px solid #aaa;
+		width:400px;
+		height:25px;
+		padding-left:5px;
+	}
+	.add-address>div>p>select{
+		display:inline-block;
+		width:120px;
+		height:25px;
+		text-align:center;
+		margin-bottom:10px;
+	}
+	.add-address>div>p>button{
+		width:100px;
+		height:30px;
+		margin-left:200px;
+		margin-bottom:20px;
+		border-radius:15px;
+	}

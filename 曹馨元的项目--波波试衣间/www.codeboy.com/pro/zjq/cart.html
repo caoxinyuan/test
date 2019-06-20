@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>购物车--波波试衣间</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body> 
+	<!--1、网页头部-->
+	<header id="header"></header>
+	<div class="main">
+    <!--2、购物车主体-->
+		<div id="shopping-cart">
+		  <!--2.1 标题行-->
+			  <div class="title">
+					<b>购物车</b>
+					<p>
+					  已选
+					  <span class="total color">0</span>
+					  件商品
+					  <span>合计(不计运费)</span>
+					  <span class="totalPrices color sum">0.00元</span>
+					</p>
+			  </div>
+		  <!--2.2 内容块-->
+			<div id="box">
+			<!--2.2.1 内容-->
+				<div id="content-box">
+					<div class="imfor-top">
+						<div class="check-top">
+							  <img src="imgs/cart/product_normal.png" alt="">
+							  全选
+						</div>
+						<div class="product-top">商品</div>
+						<div class="price-top">单价(元)</div>
+						<div class="num-top">数量</div>
+						<div class="total-top">金额</div>
+						<div class="del-top">操作</div>
+					</div>
+					<div id="content-box-body" class="clear">
+						<!--1、商品1-->
+						<!--<div class="imfor">
+							<div class="check">
+								<img src="imgs/cart/product_normal.png" alt="">
+							</div>
+							<div class="product">
+								<a href="#">
+								  <img src="imgs/pro-imgs/sm/cid=1-1.jpg" alt="">
+								</a>
+								<span class="desc">
+								  <a href="#">6200U 4G 500G 2G独显 Win10)黑色</a>
+								</span>
+								<p class="col">
+								  <span>规格：</span>
+								  <span class="color-desc">【E470C-2017新】i5 4G 500G  </span>
+								</p>
+							</div>
+							<div class="pro-price">
+								<p class="price-desc"><del>￥4688.00</del></p>
+								<p class="price">
+								  <b>￥3998.00</b>
+								</p>
+							</div>
+							<div class="num">
+								<span class="reduce">&nbsp;-&nbsp;</span>
+								<input type="text" value="1">
+								<span class="add">&nbsp;+&nbsp;</span>
+							</div>
+							<div class="total-price">
+								<span>￥3998.00</span>
+							</div>
+							<div class="del">
+								<p><a href="#">删除</a></p>
+							</div>
+						</div>
+						 </div>2.2.2 计算-->
+						  <h1 align="center">
+						  啊哦，空空如也！您没有添加任何商品到购物车哦
+						  <small><a href="product.html" style="color:#e4393c">去购买&gt;</a></small>
+						  </h1>
+					</div>
+					<div class="foot">
+						  <div class="base">
+									<div class="all checkall">
+									  <span>
+										<img src="imgs/cart/product_normal.png" alt="">
+									  </span>
+									  全选
+									</div>
+									<a href="#">删除</a>
+								 <div class="foot-qk">清空失效产品</div>
+						  </div>
+						<div class="go-price">
+							<div class="foot-selected">已选<span class="totalOne color">0</span>件商品</div>
+							<div class="foot-tol">
+							  <span>合计(不含运费)：</span>
+							  <span class="foot-price">0.00元</span>
+							</div>
+							<div class="foot-cash" onclick="location.href='pay.html'">去结算</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--3、页面底部-->
+  <footer id="footer"></footer>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/cart.js"></script>	
+</body>
+</html>

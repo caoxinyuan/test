@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	 <link rel="icon" href="imgs/favoicon.ico">
+	<style>
+		div.main{
+			margin:30px auto;
+			background:url(imgs/registerbg.jpg);
+		}
+		.login{
+			
+			position:relative;
+			margin:0 auto;
+			height:500px;
+		}
+		#top{
+			height:80px;
+		}
+		#top div svg{
+			vertical-align:bottom;
+			margin-left:100px;
+			margin-top:20px;
+		}
+		#top div h1{
+			font:33px "华文行楷","微软雅黑";
+			color:black;
+			display:inline-block;
+		}
+/*设置登录界面*/
+		.login_box{
+			margin:50px auto;
+			width:315px;
+			color:black;
+			background:rgba(89,97,104,.15);
+			padding:20px 30px;
+
+		}
+		.login_box>h3{
+			font-size:23px;
+			color:black;
+			margin-bottom:30px;
+			position:relative;
+		}
+		.login_box>h3>a{
+			font-size:13px;
+			position:absolute;
+			right:0;
+			color:black;
+			bottom:0;
+		}
+		.login_box>div{
+			margin-bottom:5px;
+		}
+		.login_box>div>p{
+			font-size:18px;
+			margin-bottom:5px;
+		}
+		.login_box>div>div>input{
+			height:40px;
+			width:313px;
+			padding:3px 28px;
+			box-sizing:border-box;
+			outline:0;
+			font-size:16px;
+		}
+		.login_box>div>div>img.pwdislook{
+			position:absolute;
+			top:15px;
+			right:8px;
+			cursor:pointer;
+		}
+		.login_box>div>div>img.login_img{
+			position:absolute;
+			top:8px;
+			left:3px;
+			width:24px;
+			height:24px;
+			border:0;
+		}
+		.login_box>div>div>input.border{
+			border-top:3px solid #999;
+			border-left:3px solid #999;
+			box-sizing:border-box;
+		}
+		.login_box>div>span.vali_info{
+			visibility:hidden;
+			color:#f40;
+			padding:3px 5px;
+		}
+		.login_box>div>span.vali_true{
+			color:#4cd710;
+			background:url(imgs/ok.png) no-repeat center left;
+			padding-left:20px;
+		}
+		.login_box>div>span.vali_fail{
+			background:url(imgs/err.png) no-repeat center left;
+			color:red;
+			border:2px solid red;
+			padding-left:15px;
+		}
+		.login_box>button{
+			margin:10px auto;
+			font-size:18px;
+			color:white;
+			width:313px;
+			height:40px;
+			line-height:40px;
+			background:#e4393c;
+			border:0;
+			border-radius:5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div id="top">
+			<div>
+				<a href="index.html">
+					<svg width="120px" height="40px">
+						<!--<defs>
+							<linearGradient id="linegradient" x1="" y1="" x2="" y2="">
+								<stop offset= stop-color= stop-opacity= /></stop>
+								<stop offset= stop-color= stop-opacity= /></stop>
+							</linearGradient>
+						</defs>-->
+						<line x1="8" y1="0" x2="5" y2="35" stroke="#f40" stroke-width="5" rx="2" ry="2"></line>
+						<ellipse rx="10" ry="15" cx="20" cy="18" stroke="#f40" stroke-width="5"  fill="transparent"></ellipse>
+						<line x1="7" y1="18" x2="29" y2="18" stroke="#f40" stroke-width="5"></line>
+						<ellipse rx="10" ry="15" cx="46" cy="18" stroke="#f40" stroke-width="5"  fill="transparent"></ellipse>
+						<text font-size="15" x="58" y="12" fill="#f40">2</text>
+						<line x1="68" y1="0" x2="68" y2="38" stroke="#f40" stroke-width="1" rx="2" ry="2"></line>
+						<text fill="#f40" font-size="15" x="70" y="16">波波</text>
+						<text fill="#f40" font-size="15" x="70" y="34">试衣间</text>
+					</svg>
+				</a>
+				<h1>欢迎登录</h1>
+			</div>
+		</div>
+		<div class="login addtable">
+			<!-- 登录界面 -->
+			<form id="login_form">
+				<div class="login_box">
+					<h3>登&nbsp;录<a href="register.html">新用户注册</a></h3>
+					<div>
+						<p>用户名：</p>
+						<div style="position:relative">
+<!-- 							<img src="imgs/yhm.png" class="login_img"> -->
+							<input type="text" placeholder="这里输入用户名" name="uname" autofocus value="bobo">
+						</div>
+					</div>
+					<div style="margin-bottom:10px;">
+						<span class="vali_info"></span>
+					</div>
+					<div>
+						<p>密码：</p>
+						<div style="position:relative">
+<!-- 							<img src="imgs/mm.png" class="login_img"> -->
+							<input type="password" placeholder="这里输入密码" name="upwd" value="z12345678">
+							<img src="imgs/x_pwdlook.png" width="16" height="10" border="0" alt="密码是否可见" class="pwdislook">
+						</div>
+					</div>
+					<div style="margin-bottom:10px;">
+						<span class="vali_info"></span>
+					</div>
+					<div>
+						<input type="checkbox" style="height:13px;width:13px">自动登录
+						<a href="forgetPwd.html" class="rt" style="font-size:14px;color:#666">忘记密码？</a>	
+					</div>
+					<button id="signin">登&nbsp;&nbsp;录</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>

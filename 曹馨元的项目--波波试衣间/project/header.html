@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!-- 导入css-->
+    <!--<link rel="stylesheet" href="../css/bootstrap.css"/>-->
+    <!-- 导入3个js,有顺序要求-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+
+</head>
+<body>
+    <header id="header">
+        <div class="head">
+            <div class="head_logo">
+                <h1>
+                    <a href="index.html">
+                        <!-- <img src="imgs/logo.png"> -->
+                        <svg width="120px" height="40px">
+                            <line x1="8" y1="0" x2="5" y2="35" stroke="#f40" stroke-width="5" rx="2" ry="2"></line>
+                            <ellipse rx="10" ry="15" cx="20" cy="18" stroke="#f40" stroke-width="5" fill="transparent"></ellipse>
+                            <line x1="7" y1="18" x2="29" y2="18" stroke="#f40" stroke-width="5"></line>
+                            <ellipse rx="10" ry="15" cx="46" cy="18" stroke="#f40" stroke-width="5" fill="transparent"></ellipse>
+                            <text font-size="15" x="58" y="12" fill="#f40">2</text>
+                            <line x1="68" y1="0" x2="68" y2="38" stroke="#f40" stroke-width="1" rx="2" ry="2"></line>
+                            <text fill="#f40" font-size="15" x="70" y="16">波波</text>
+                            <text fill="#f40" font-size="15" x="70" y="34">试衣间</text>
+                        </svg>
+                    </a>
+                </h1>
+            </div>
+            <div class="head_search">
+                <input type="text" placeholder="搜索你想看的">
+                <a href="javascript:;"><img src="imgs/icon_search.png"></a>
+            </div>
+            <div class="head_user">
+                <ul id="loginList">
+                    <li><a id="register" href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;" id="login">登录</a></li>
+                </ul>
+                <ul style="display: none;">
+                    <li><a>欢迎<i id="uname"></i></a></li>
+                    <li id="user">
+                        <img src="imgs/user.jpg">
+                        <ul class="fade">
+                            <li><a href="user.html">个人中心</a></li>
+                            <li><a href="store.html">我的收藏夹</a></li>
+                            <li><a href="cart.html">我的购物车</a></li>
+                            <li class="hover"><a href="javascript:;" id="signout">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="head_us">
+                <ul>
+                    <li>
+                        <img src="imgs/icon_app.png">
+                        手机版
+                        <div id="code">
+                            <img src="imgs/app_qrcode.png">
+                        </div>
+                    </li>
+                    <li style="position:relative;top:3px;">|</li>
+                    <li id="about_us">
+                        <span>了解我们</span>
+                        <svg width="20px" height="12px">
+                            <polyline points="2,2 10,10 18,2" fill="#f40"></polyline>
+                        </svg>
+                        <ul class="fade">
+                            <li><a href="about.html">关于我们</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

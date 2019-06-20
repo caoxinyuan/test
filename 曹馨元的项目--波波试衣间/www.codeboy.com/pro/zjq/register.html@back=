@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="icon" href="imgs/favoicon.ico">
+	<style>
+		div.main{
+			margin:30px auto;
+			background:url(imgs/registerbg.jpg);
+		}
+		.reg{
+			background-size:100%;
+			position:relative;
+			margin:0 auto;
+			height:500px;
+		}
+		#top{
+			height:80px;
+		}
+		#top div svg{
+			vertical-align:bottom;
+			margin-left:100px;
+			margin-top:20px;
+		}
+		#top div h1{
+			font:33px "华文行楷","微软雅黑";
+			color:black;
+			display:inline-block;
+		}
+/*设置注册界面*/
+		.reg_box{
+			margin:15px 50px 0;
+			color:black;
+			padding:20px 30px;
+		}
+		.reg_box>p{
+			margin:10px 0;
+		}
+		.reg_box>p>label>input{
+			width:300px;
+			height:40px;
+			font-size:15px;
+			padding-left:8px;
+			border:0;
+			box-sizing:border-box;
+			outline:none;
+		}
+		.reg_box>p>label>input.focus{
+			border-top:3px solid #aaa;
+			border-left:3px solid #aaa;
+		}
+		.reg_box>.btn{
+			display:inline-block;
+			font-size:20px;
+			width:300px;
+			height:50px;
+			line-height:50px;
+			border-radius:5px;
+			background:#e4393c;
+			color:white;
+			cursor:pointer;
+		}
+		.reg_box a{
+			color:#e4393c;
+		}
+	input.error{
+        box-shadow: 0 0 5px #f40;
+      }
+    label.error{
+        background:#fff url(imgs/err.png) no-repeat;
+        color:#f40;
+        background-position:left;
+        background-size: 20px 20px;
+        padding:5px 5px 5px 25px ;
+        margin-left:10px;
+		border-radius:5px;
+        font-style: italic;
+      }
+	  .reg_box>p>span{
+		border:1px solid #666;
+		padding:8px;
+		background:#fff;
+		color:black;
+		border-radius:5px;
+	  }
+	  .reg_box>p>span.vali{
+		display:none;
+	  }
+	  #err_note{
+		color:red;
+		font-size:18px;
+	  }
+	</style>
+</head>
+<body>
+	<div class="main" >
+		<div id="top">
+			<div>
+				<a href="index.html">
+				<!-- <img src="imgs/logo.png" alt="logo"> -->
+					<svg width="120px" height="40px">
+						<!--<defs>
+							<linearGradient id="linegradient" x1="" y1="" x2="" y2="">
+								<stop offset= stop-color= stop-opacity= /></stop>
+								<stop offset= stop-color= stop-opacity= /></stop>
+							</linearGradient>
+						</defs>-->
+						<line x1="8" y1="0" x2="5" y2="35" stroke="#f40" stroke-width="5" rx="2" ry="2"></line>
+						<ellipse rx="10" ry="15" cx="20" cy="18" stroke="#f40" stroke-width="5"  fill="transparent"></ellipse>
+						<line x1="7" y1="18" x2="29" y2="18" stroke="#f40" stroke-width="5"></line>
+						<ellipse rx="10" ry="15" cx="46" cy="18" stroke="#f40" stroke-width="5"  fill="transparent"></ellipse>
+						<text font-size="15" x="58" y="12" fill="#f40">2</text>
+						<line x1="68" y1="0" x2="68" y2="38" stroke="#f40" stroke-width="1" rx="2" ry="2"></line>
+						<text fill="#f40" font-size="15" x="70" y="16">波波</text>
+						<text fill="#f40" font-size="15" x="70" y="34">试衣间</text>
+					</svg>
+				</a>
+				<h1>欢迎注册</h1>
+			</div>
+		</div>
+		<div class="reg addtable">
+			<!-- 登录界面 -->
+			
+			<form id="reg_form">
+				<div class="reg_box">
+						<datalist id="demail">
+								<option><span></span>@qq.com</option>
+								<option><span></span>@163.com</option>
+								<option><span></span>@126.com</option>
+								<option><span></span>@sina.com.cn</option>
+						</datalist>
+						
+						<p>
+							<label>
+								<input type="text" placeholder="请输入用户名" name="uname">
+							</label>
+						<span class="vali">以字母开头的3-10位的数字、字母和下划线的任意组合</span>
+						</p>
+						<p>
+							<label>
+								<input type="password" placeholder="请输入密码" name="upwd" id="upwd">
+							</label>
+							<span class="vali">以字母开头的8-16位的数字、字母和下划线的任意组合</span>
+						</p>
+						<p>
+							<label>
+								<input type="password" placeholder="请再次输入密码" name="cpwd">
+							</label>
+							<span class="vali">以字母开头的8-16位的数字、字母和下划线的任意组合</span>
+						</p>
+						<p>
+							<label>
+								<input type="email" placeholder="请输入邮箱" name="email" list="demail">
+							</label>
+							<span class="vali">带有@和后缀名的邮箱</span>
+						</p>
+						<p>
+							<label>
+								<input type="number" placeholder="请输入手机号码" name="tel">
+							</label>
+							<span class="vali">11位的手机号码</span>
+						</p>
+						<p>
+							<canvas id="canvas"></canvas>
+							<a href="javascript:;" id="changeCode" style="position:relative;top:-15px;">看不清？换一张</a>
+						</p>
+						<p>
+							<label>
+								<input type="text" placeholder="请输入验证码" id="input-code">
+							</label>
+							<span class="vali">不区分大小写</span>
+						</p>
+						<button type="button" class="btn">立即注册</button>
+						已有账号？<a href="login.html">去登录&gt;&gt;</a>
+						<p id="err_note"></p>
+				</div>
+				
+			</form>
+		</div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/code.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/register.js"></script>
+</body>
+</html>

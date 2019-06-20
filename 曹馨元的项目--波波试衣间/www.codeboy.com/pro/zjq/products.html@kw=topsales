@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bobo试衣间</title>
+</head>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/products.css">
+<body>
+	<!--header  -->
+	<header id="header">
+		<img src="imgs/bx_loader.gif">
+	</header>
+	<div class="main">
+		<div class="top-div">
+			<div class="top-pro" id="topPro">
+				<div class="choose">
+					<a href="javascript:;" id="updown">收起筛选框</a>
+					<ul id="choose-nav" class="clear in">
+						<li>
+							<b>已选：</b>
+							<span id="choose-kw">	
+							</span>
+							<strong class="clearAll">清空全部</strong>
+							<strong class="kwSearch">立即搜索</strong>
+						</li>
+						<li class="choose-logo">
+							<b>品牌：</b>
+							<a href="#" class="selected">全部</a>
+							<a href="#">优衣库</a>
+							<a href="#">花花公子</a>
+							<a href="#">热风</a>
+							<a href="#">美特斯邦威</a>
+						</li>
+						<li class="choose-hot">
+							<b>选购热点：</b>
+							<a href="#" class="selected">全部</a>
+							<a href="#">潮流</a>
+							<a href="#">韩版</a>
+						</li>
+						<li class="choose-size">
+							<b>尺码：</b>
+							<a href="default.htm" class="selected">全部</a>
+							<a href="default.htm">S</a>
+							<a href="default.htm">M</a>
+							<a href="default.htm">L</a>
+							<a href="default.htm">XL</a>
+							<a href="default.htm">XXL</a>
+						</li>
+						<li class="choose-time">
+							<b>适用季节：</b>
+							<a href="default.htm" class="selected">全部</a>
+							<a href="default.htm">夏季</a>
+							<a href="default.htm">冬季</a>
+							<a href="default.htm">春季</a>
+							<a href="default.htm">秋季</a>
+						</li>
+						<li class="choose-type">
+							<b>筛选条件：</b>
+							<a href="default.htm" class="selected">全部</a>
+							<a href="default.htm">领型<img src="" alt=""></a>
+							<a href="default.htm">材质<img src="" alt=""></a>
+						</li>	
+					</ul>
+				</div>
+				<div class="sort">
+					<div class="sort-by">
+						<ul class="clear">
+							<li class="focus">综合
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" class="down" title="降序"></polyline>
+									<polyline points="0,13 8,5 16,13" fill="#aaa" class="up" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>人气
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>销量
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>信用
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" title="升序"></polyline>
+								</svg>
+							</li>
+							<li>价格
+								<svg width="16px" height="16px">
+									<polyline points="0,8 8,16 16,8" fill="#aaa" class="down" title="降序"></polyline>
+ 									<polyline points="0,13 8,5 16,13" fill="#aaa" class="up fade" title="升序"></polyline>
+								</svg>
+							</li>
+						</ul>
+					</div>
+					<div class="sort-checked">
+						<ul class="clear">
+							<li>	
+								<input type="checkbox" checked>包邮
+							</li>
+							<li>	
+								<input type="checkbox">货到付款
+							</li>
+							<li>	
+								<input type="checkbox">正品保障
+							</li>
+							<li>	
+								<input type="checkbox">7+天内退货
+							</li>
+							<li>	
+								<input type="checkbox">赠送退货运费险
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="products">
+					<ul class="clear">
+						<li>
+							<a href="${href}"><img src="${pic}"></a>
+							<div class="sm-img">
+							</div>
+							<p class="pro-title">
+								<a href="${href}">${details}</a>
+							</p>
+							<div class="pro-price">
+								<span class="price">￥${price}</span>
+								<b>包邮</b>
+								<span class="rt paid-num">销量:${sales}</span>
+							</div>
+							<div class="pro-user" data-cid="${cid}">
+								<a href="store.html" class="store">
+									<img src="imgs/store_f.png" alt="">
+									加入收藏
+								</a>
+								<a href="cart.html" class="addCart">
+									<img src="imgs/cart.png" alt="">
+									加入购物车
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="paging clear">
+					<ul class="rt" id="page">
+						<li><a href="default.htm" class="prev disabled">&lt;上一页</a></li>
+						<li><a href="default.htm" class="next">下一页&gt;</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-recommend">
+				<p>/---bobo推荐---/</p>
+				<div>
+					<ul id="topul1">
+						<li>
+							<a href="default.htm"><img src="imgs/products/0pro10.jpg" alt=""></a>
+							<p class="title">这里是title</p>
+							<p class="price">￥66.00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hot-sale">
+			<div class="top-title">
+				<p>-------------掌柜热卖-------------掌柜热卖-------------掌柜热卖-------------</p>
+				<a href="default.htm" class="more rt">查看更多热卖&gt;&gt;</a>
+			</div>
+			<div class="hot-pro">
+				<ul>
+					<li>
+						<a href="${href}"><img src="${pic}"></a>
+						<p class="title"><a href="${href}">${title}</a></p>
+						<div class="pro-price">
+							<span class="price">￥${price}</span>
+							<del>￥${preprice}</del>
+							<b class="rt">包邮</b>
+						</div>
+						<div class="pro-user">
+							<b>掌柜热卖</b>
+							<a href="default.htm" class="store rt">
+								<img src="imgs/store_f.png" alt="">加入收藏
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<footer id="footer">
+		<img src="imgs/bx_loader.gif">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>服务器崩溃</title>
+</head>
+<style>
+	body{
+		margin:0;
+		padding:0;
+		background:url(imgs/500.jpg);
+		background-size:90%;
+	}
+	a{
+		display:inline-block;
+		text-decoration:none;
+		text-align:center;
+		line-height:44px;
+		color:#68A6F1;
+		width:180px;
+		font-weight:bold;
+		font-size:18px;
+		height:44px;
+		background:#E7ECF0;
+		border-radius:22px;
+		border:2px solid #68A6F1;
+		position:absolute;
+		top:60%;
+	}
+	.a1{
+		right:35%;
+	}
+	.a2{
+		right:25%;
+	}
+</style>
+<body>
+	<a href="index.html" class="a1">返回波波试衣间首页</a>
+	<a href="javascript:;" onclick="history.go(-1)" class="a2">返回上一页</a>
+</body>
+</html>

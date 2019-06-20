@@ -1,0 +1,710 @@
+div.index{
+	width:1200px;
+	margin:80px auto;
+}
+/**************封装所有弹性布局******************/
+#top-index,.banner>.bnr-img,
+.banner>.bnr-dot,.floor-content>ul,
+.isScaning>.scan-content>ul,.discover,.floor2-content{
+	display:flex;
+	justify-content:space-between;
+}
+/*********************设置导航***********************/
+	#index-nav>.nav{
+		text-align:center;
+	}
+	#index-nav>.nav>li{
+		display:inline-block;
+		width:80px;
+		margin-left:30px;
+	}
+	#index-nav>.nav>li>a{
+		font-size:18px;
+		color:#e4393c;
+	}
+	.nav-container{
+		position:relative;
+	}
+	.nav-container>ul{
+		text-align:center;
+		position:absolute;
+		background: #FAEDEC;
+		width:0;
+		overflow:hidden;
+		opacity:0;
+		top:0;left:0;
+		z-index:20;
+		transition:all .5s linear;
+	}
+	.nav-container>ul.in{
+		opacity: 1;
+		width:120px;
+	}
+	.nav-container>ul>li{
+		margin:10px auto;
+	}
+	.nav-container>ul>li>a{
+		white-space: nowrap;
+	}
+	.nav-container>#nHot{
+		left:210px;
+	}
+	.nav-container>#nFeCloth{
+		left:320px;
+	}
+	.nav-container>#nFePant{
+		left:435px;
+	}
+	.nav-container>#nMCloth{
+		left:550px;
+	}
+	.nav-container>#nDress{
+		left:665px;
+	}
+	.nav-container>#nFeShoe{
+		left:780px;
+	}
+	.nav-container>#nMShoe{
+		left:900px;
+	}
+/*********************设置轮播部分******************/
+	.banner{
+		position:relative;
+		width:100%;
+		height:443px;
+		margin-top:20px;
+	}
+	.banner>.bnr-img,.banner>.bnr-text{
+		transition:all 1s linear;
+	}
+	/****************图片部分*****************/
+	.banner>.bnr-img{
+		overflow:hidden;.
+		position:relative;
+	}
+	.banner>.bnr-img>li{
+		position:absolute;
+		top:0;left:0;
+		display:none;
+	}
+	.banner>.bnr-img>li.show{
+		display:block;
+	}
+	/**************轮播文本部分****************/
+	.banner>.bnr-text{
+		position:absolute;
+		top:350px;
+		left:50%;
+		overflow:hidden;
+		width:600px;
+		margin-left:-300px;
+		height:60px;
+		border-radius:10px;
+		background:rgba(180,200,200,.7)
+	}
+	.banner>.bnr-text>li{
+		width:600px;
+		height:60px;
+		float:left;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		font-size:30px;
+		color:#e4393c;
+		text-align:center;
+		line-height:60px;
+	}
+	/**********小圆点部分*************/
+	.banner>.bnr-dot{
+		position:absolute;
+		top:375px;
+		left:800px;
+		z-index:10;
+	}
+	.banner>.bnr-dot>li{
+		width:10px;
+		height:10px;
+		margin-left:6px;
+		background:#666;
+		border-radius:50%;
+	}
+	.banner>.bnr-dot>li.active{
+		background:#e4393c;
+	}
+	/***********设置左右翻页***************/
+	.banner>a{
+		position:absolute;
+		top:45%;
+		width:32px;
+		height:32px;
+		opacity:.3;
+	}
+	.banner>a:hover{
+		opacity:1;
+	}
+	.banner>a.prev{
+		left:15px;
+		background:url(../imgs/prev.png);
+	}
+	.banner>a.next{
+		right:15px;
+		background:url(../imgs/next.png);
+	}
+/*****************设置各楼层板块******************/
+	.floor{
+		position:relative;
+		margin-top:30px;
+	}
+	/*设置楼层公用标题样式*/
+	.floor-title>.floor-text{
+		font-size:20px;
+		color:#000;
+	}
+	.floor-title>i{
+		float:left;
+		background:url("../imgs/index.png") no-repeat;
+		width:50px;
+		height:50px;
+		position:relative;
+		top:-16px;
+	}
+	/*设置楼层公用内容样式*/
+	.floor-content>ul>li{
+		background:white;
+		width:224px;
+		overflow:hidden;
+	}
+	.floor-content>ul>li img{
+		width:224px;
+		border:0;
+	}
+	.floor-content>ul>li>p{
+		margin:3px;
+	}
+	.floor-content>ul>li>p.desc{
+		font-size:13px;
+		height:36px;
+		overflow:hidden;
+	}
+	a.more{
+		font-size:15px;
+		margin-bottom:10px;
+		float:right;
+		display:inline-block;
+		padding:5px 10px;
+		color:#e4393c;
+		border:1px solid #e4393c;
+	}
+	.hr{
+		margin:20px auto;
+	}
+/***************1楼首页推荐************************/
+	#F1>li{
+
+		border:1px solid #faf;
+	}
+	#F1>li p{
+		padding-left:5px;
+	}
+	#F1>li:nth-child(1),#F1>li:nth-child(2),#F1>li:nth-child(3){
+		width:23%;margin-right:14px;
+		overflow:hidden;float:left;
+		transition:all .5s linear;
+	}
+	#F1>li:nth-child(1):hover,#F1>li:nth-child(2):hover,#F1>li:nth-child(3):hover{
+		transform:scale(1.05);
+	}
+	#F1>li>a>img{
+		width:100%;
+	}
+	#F1>li:nth-child(4),#F1>li:nth-child(5),#F1>li:nth-child(6),#F1>li:nth-child(7){
+		width:11.9%;float:right;
+		opacity:0.85;margin-left:14px;
+	}
+	#F1>li:nth-child(4):hover,#F1>li:nth-child(5):hover,#F1>li:nth-child(6):hover,#F1>li:nth-child(7):hover{
+		opacity:1;
+	}
+	#F1>li:nth-child(4)>p,#F1>li:nth-child(5)>p,#F1>li:nth-child(6)>p,#F1>li:nth-child(7)>p{
+		font-size:13px;
+	}
+	ul#F1>li>div{
+		overflow:hidden;
+	}
+	ul#F1>li>div>:first-child{
+		margin-bottom:10px;
+		margin-top:10px;
+		height:36px;
+		overflow:hidden;
+	}
+	ul#F1>li>div>div{
+		position:absolute;
+		bottom:0;
+		background:#fff;
+		height:0;
+		width:100%;
+		text-align:center;
+		transition:all .5s linear;
+	}
+	ul#F1>li>div>div.in{
+		height:85px;
+	}
+	ul#F1>li>div>div>:first-child{
+		margin:8px;
+	}
+	ul#F1>li>div>div>:first-child>:first-child{
+		font:bold 25px "华文行楷";
+		margin-right:10px;
+		color:#d4393c;
+	}
+	ul#F1>li>div>div>:nth-child(2){
+		padding:3px 10px;
+		background:#fff;
+		color:#e4393c;
+		border:1px solid #e4393c;
+		border-radius:5px;
+		transition:all .5s linear;
+	}
+	ul#F1>li>div>div>:last-child{
+		margin-left:10px;
+		padding:3px 10px;
+		background:#e4393c;
+		color:#fff;
+		border:1px solid #e4393c;
+		border-radius:5px;
+		transition:all .5s linear;
+	}
+/*****************************2楼共享精选********************/
+	.floor2-content{
+		position:relative;
+	}
+	.floor2-content>.floor-title{
+		position:relative;
+		width:28%;
+	}
+	.floor2-content>.floor-title img{
+		width:100%;
+	}
+	.floor2-content>.floor-title>div{
+		text-align:center;
+		background:#fff;
+		position:absolute;
+		width:186px;
+		height:100px;
+		top:70%;left:50%;
+		margin-left:-93px;
+		opacity:0.85;
+	}
+	.floor2-content>.floor-title>div:hover{
+		opacity:1;
+	}
+	.floor2-content>.floor-title>div>p{
+		margin:8px;
+	}
+	.floor2-content>.floor-title>div>p:first-child{
+		font-size:20px;
+		color:#e4393c;
+	}
+	.floor2-content>.floor-title>div>hr{
+		width:150px;
+		margin:0 auto;
+	}
+	.floor2-content>ul{
+		width:36%;
+		padding-top:50px;
+		margin-left:10px;
+	}
+	.floor2-content>ul>li{
+		background:#fff;
+		float:left;
+		position:relative;
+		border:1px solid #eee;
+		padding:5px 0;
+	}
+	.floor2-content>ul>li:first-child{
+		width:49.5%;
+	}
+	.floor2-content>ul>li:nth-child(2){
+		width:49.5%;
+	}
+	.floor2-content>ul>li:nth-child(3),
+	.floor2-content>ul>li:nth-child(4),
+	.floor2-content>ul>li:nth-child(5){
+		width:32.8%;
+	}
+	.floor2-content>ul>li img{
+		width:80%;
+		margin-top:10px;
+		position:relative;
+		left:18%;
+		transition:all .2s linear;
+	}
+	.floor2-content>ul>li img:hover{
+		transform:translatex(-10px);
+	}
+	.floor2-content>ul>li .price{
+		font-size:15px;
+	}
+	.floor2-content>.f2-title{
+		position:absolute;
+		top:0;
+		background:url(../imgs/f2.png);
+		width:35.3%;height:50px;
+		text-align:center;
+		border-top:2px solid #F2ADAD;
+	}
+	.floor2-content>.f2-title>span{
+		width:150px;
+		height:30px;
+		color:#fff;
+		background:#F2ADAD;
+		font-size:18px;
+		line-height:30px;
+		position:relative;
+		top:-5px;
+	}
+	.floor2-content>.lf-title{
+		left:28.4%;
+		border-top:2px solid #29396D;
+	}
+	.floor2-content>.lf-title>span{
+		background:#29396D;
+	}
+	.floor2-content>.rt-title{
+		right:0;
+	}
+/****************楼层4鞋子左右两块********************/
+	.discover ul{
+		text-align:center;
+		margin-top:5px;
+	}
+	.discover>div>ul>li{
+		display:inline-block;
+		margin-left:5px;
+		width:32%;
+		background:#f5f5f5;
+		margin-bottom:5px;
+		position:relative;
+	}
+	.discover ul>li img{
+		width:100%;
+		opacity:0.85;
+		cursor:pointer;
+	}
+	.discover ul>li img:hover{
+		opacity:1;
+	}
+	.discover ul>li>:last-child{
+		margin-top:10px;
+		margin-bottom:5px;
+		font-size:13px;
+	}
+	.discover-goods,.discover-loves{
+		width:49.5%;
+		border:1px solid #ddd;
+		background:#fff;
+		box-sizing:border-box;
+	}
+	.discover .title>img{
+		width:75px;
+		height:24px;
+		position:relative;
+		top:8px;
+	}
+	.discover .title{
+		height:40px;
+		padding:0 8px;
+	}
+	.discover-goods ul>li>:last-child{
+		color:#2caef8;
+	}
+	.discover-loves ul>li>:last-child{
+		color:#ff5373;
+	}
+	.discover .title>a>img{
+		width:40px;
+	}
+	/*换一换动画*/
+	@keyframes change{
+		0%{transform:translatex(0);}
+		50%{transform:translatex(-5px);}
+		100%{transform:translatex(0);}
+	}
+	.discover .title>span.change{
+		font-size:15px;
+		margin-left:5px;
+		color:#e4393c;
+		animation:change .5s infinite;
+	}
+	/*足球动画*/
+	@keyframes football{
+		0%{transform:translatex(0) rotate(0);}
+		50%{transform:translatex(-415px) rotate(1300deg);}
+		100%{transform:translatex(0) rotate(0);}
+	}
+	.discover .title>a.action{
+		animation:football 2s ease-in-out;
+	}
+	/*抖动动画*/
+	@keyframes shake{
+		0%{transform:rotate(0);}
+		15%{transform:rotate(-5deg);}
+		30%{transform:rotate(-10deg);}
+		45%{transform:rotate(-5deg);}
+		50%{transform:rotate(0);}
+		55%{transform:rotate(5deg);}
+		70%{transform:rotate(10deg);}
+		85%{transform:rotate(5deg);}
+		100%{transform:rotate(0);}
+	}
+	.discover .title>img.action{
+		animation:shake 1s 1s;
+	}
+	/*翻转动画*/
+	@keyframes lirotate{
+		0%{transform:rotateY(0);}
+		50%{transform:rotateY(180deg);opacity:1;}
+		100%{transform:rotateY(0);opacity:0;display:none;}
+	}
+	.discover>div>ul>li:first-child.faded{
+		animation:lirotate 1s linear 2s;
+	}
+	.discover>div>ul>li:nth-child(2).faded{
+		animation:lirotate 1s linear 2.4s;
+	}
+	.discover>div>ul>li:nth-child(3).faded{
+		animation:lirotate 1s linear 2.8s;
+	}
+	.discover>div>ul>li:nth-child(4).faded{
+		animation:lirotate 1s linear 3.2s;
+	}
+	.discover>div>ul>li:nth-child(5).faded{
+		animation:lirotate 1s linear 3.6s;
+	}
+	.discover>div>ul>li:nth-child(6).faded{
+		animation:lirotate 1s linear 4s;
+	}
+/*******************设置楼层5单品**********************/
+	.one>.nav>p{
+		font-size:20px;
+		margin-right:20px;
+		position:relative;
+		top:5px;
+		color:#000;
+	}
+	.one>.container>ul>li img{
+		width:100%;
+		height:235px;
+	}
+	/*设置查看详情隐藏和显示功能*/
+	.one>.container>ul>li>div{
+		overflow:hidden;
+	}
+	.one>.container>ul>li>div>:first-child{
+		margin-bottom:10px;
+		margin-top:10px;
+		height:36px;
+		overflow:hidden;
+	}
+	.one>.container>ul>li>div>div{
+		position:absolute;
+		bottom:0;
+		background:#fff;
+		height:0;
+		overflow:hidden;
+		width:100%;
+		text-align:center;
+		transition:all .5s linear;
+	}
+	.one>.container>ul>li>div>div.in{
+		height:35px;
+	}
+	.one>.container>ul>li>div>div>:first-child{
+		padding:3px 10px;
+		background:#fff;
+		color:#e4393c;
+		border:1px solid #e4393c;
+		border-radius:5px;
+		transition:all .5s linear;
+	}
+	.one>.container>ul>li>div>div>:last-child{
+		margin-left:10px;
+		padding:3px 10px;
+		background:#e4393c;
+		color:#fff;
+		border:1px solid #e4393c;
+		border-radius:5px;
+		transition:all .5s linear;
+	}
+	/***********单品中的标签跳转事件*****************/
+	.tabs{ list-style:none; padding:0;}
+	.tabs a{
+		text-decoration:none;
+		color:#000;
+		padding:6px 18px;
+		display:inline-block;
+		text-align:center;
+	}
+	.tabs>li{
+	  float:left;
+	  border-bottom:2px solid #e4393c;
+	  transition:all .5s linear;
+	}
+	.tabs>.active{
+	  background:#e4393c;
+	}
+	.tabs>.active>a{
+		color:white;
+	}
+	.container{
+		position: relative;
+		height:260px;
+		margin-top:20px;
+	}
+	.container>ul{
+		position: absolute;
+		top: 0;left: 0;
+		width:100%;
+		transition:all .5s linear;
+	}
+	.container>.active{
+	  z-index:20;
+	}
+	.container>ul>li{
+		overflow:hidden;
+		display:inline-block;
+		width:200px;
+		height:250px;
+		transition:all .3s linear;
+	}
+	.one>.container>ul>li:hover{
+		transform:translatey(-28px);
+		z-index:12;
+		box-shadow:0 0 5px 2px #e4393c;
+		width:235px;height:320px;
+	}
+/*********************楼层6大家正在逛**********************/
+	.isScaning>.scan-content>ul{
+		position:relative;
+		flex-wrap:wrap;
+		margin-top:20px;
+		height:1000px;
+	}
+	.isScaning>.scan-content>ul>li{
+		margin-bottom:15px;
+		width:224px;
+		border:1px solid #fff;
+		transition:all .5s;
+	}
+	@keyframes htopt{
+		0%{height:0;opacity:0}
+		100%{height:322px;opacity:1;}
+	}
+	.isScaning>.scan-content>ul>li:hover{
+		box-shadow:0 0 8px 2px #e4393c;
+	}
+	/*.isScaning>.scan-content>ul>li.animate{
+		animation:htopt 1s ease-in-out;
+	}*/
+	.floor-title>.floor-text>a{
+		font-size:15px;
+		margin-left:20px;
+	}
+	/*.floor-title>.floor-text>a>img{
+		position:relative;
+		top:4px;
+	}*/
+/********************li标签的hover效果**************/
+	#li-hover{
+		position:absolute;
+		top:0;left:0;
+		text-align:center;
+		width:0;
+		height:448px;
+		overflow:hidden;
+		background:rgba(200,200,200,.6);
+		transition:all .5s linear;
+		box-sizing:border-box;
+	}
+	/*#li-hover.hover{
+		width:224px;
+	}*/
+	#li-hover>a:first-child{
+		margin-top:100px;
+	}
+	#li-hover>a{
+		display:block;
+		opacity:.6;
+		transition:all .5s linear;
+	}
+	#li-hover>a+a{
+		width:100px;
+		margin:0 auto;
+		height:40px;
+		line-height:40px;
+		margin-top:20px;
+		background:#e4393c;
+		color:#fff;
+		border-radius:2px;
+	}
+	#li-hover>a.hover{
+		opacity:1;
+		transform:scale(1.2);
+	}
+	.floor li{
+		position:relative;
+	}
+/*******************导航电梯************************/
+	#lift{
+		position: fixed;
+		z-index: 98;
+		background:#fff;
+		width:46px;
+		cursor:pointer;
+		display:none;
+		box-shadow:2px 0 8px 0 #808080;
+	}
+	#lift>ul>li{
+		font-size:13px;
+		border-bottom:0;
+		padding:8px 8px;
+		color:black;
+		text-align:center;
+		transition:all .5s linear;
+	}
+	#lift>ul>li:first-child{
+		border-bottom:1px solid #e4393c;
+	}
+	#lift>ul>li.hover{
+		background:#e4393c;
+		color:white;
+	}
+	#lift>ul>li:not(:first-child):hover{
+		font-weight:bold;
+	}
+	#lift>ul>li:last-child{
+		background:#fff url(../imgs/top.png) no-repeat center top;
+		padding-top:25px;
+		font-weight:bold;
+	}
+	/*hover加载大图*/
+	#load-lg{
+		position:fixed;
+		z-index:100;
+		top:50%;left:50%;
+		background:rgba(200,200,200,.5);
+	}
+	#load-lg>p{
+		position:relative;
+		margin:130px auto;
+		width:600px;height:600px;
+	}
+	#load-lg>p>span{
+		font-size:22px;
+		width:30px;height:30px;
+		border:1px solid #aaa;
+		border-radius:50%;
+		position:absolute;
+		text-align:center;
+		top:0;right:0;
+		cursor:pointer;
+	}

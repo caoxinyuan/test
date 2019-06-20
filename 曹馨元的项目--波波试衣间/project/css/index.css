@@ -1,0 +1,288 @@
+/*导航栏*/
+div.index {
+    width: 1200px;
+    margin: 15px auto;
+}
+#index-nav > .nav {
+    text-align: center;
+}
+#index-nav > .nav > li {
+    display: inline-block;
+    width: 80px;
+    margin-left: 30px;
+}
+#index-nav > .nav > li > a {
+    font-size: 18px;
+    color: #e4393c;
+}
+.nav-container {
+    position: relative;
+}
+.nav-container > ul {
+    text-align: center;
+    position: absolute;
+    background: #FAEDEC;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: all .5s linear;
+}
+.nav-container > #nHot {
+    left: 210px;
+}
+.nav-container > ul > li {
+    margin: 10px auto;
+}
+.nav-container > ul > li > a {
+    white-space: nowrap;/*这个属性没有讲过*/
+}
+.nav-container > #nFeCloth {
+    left: 320px;
+}
+.nav-container > #nFePant {
+    left: 435px;
+}
+.nav-container > #nMCloth {
+    left: 550px;
+}
+.nav-container > #nDress {
+    left: 665px;
+}
+.nav-container > #nFeShoe {
+    left: 780px;
+}
+.nav-container > #nMShoe {
+    left: 900px;
+}
+/*轮播图*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 443px;
+    margin-top:15px;
+}
+.banner>.bnr-img>li>a>img{
+    width:100%;
+
+}
+.banner > .bnr-img {
+    overflow: hidden;
+}
+.banner > .bnr-img, .banner > .bnr-text {
+    transition: all 1s linear;
+}
+#top-index, .banner > .bnr-img, .banner > .bnr-dot, .floor-content > ul, .isScaning > .scan-content > ul, .discover, .floor2-content {
+    display: flex;
+    justify-content: space-between;
+}
+.banner > .bnr-img > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.banner > .bnr-text {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    overflow: hidden;
+    width: 600px;
+    margin-left: -300px;
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(180,200,200,.7);
+}
+.banner > .bnr-text > li {
+    width: 600px;
+    height: 60px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30px;
+    color: #e4393c;
+    text-align: center;
+    line-height: 60px;
+}
+.banner > .bnr-dot {
+    position: absolute;
+    top: 375px;
+    left: 800px;
+    z-index: 10;
+}
+.banner > .bnr-dot > li {
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+    background: #666;
+    border-radius: 50%;
+}
+.banner > .bnr-dot > li.active{
+    background: #e4393c;
+}
+.banner > a {
+    position: absolute;
+    top: 45%;
+    width: 32px;
+    height: 32px;
+    opacity: .3;
+}
+.banner > a.prev {
+    left: 43px;
+    background: url(../imgs/prev.png);
+}
+.banner > a.next {
+    right: 43px;
+    background: url(../imgs/next.png);
+}
+/*商品层*/
+.floor {
+    position: relative;
+    margin-top: 30px;
+}
+/*首页推荐*/
+/*推荐层*/
+.floor-title > i {
+    float: left;
+    background: url("../imgs/index.png") no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    width: 63px;
+    height: 59px;
+    position: relative;
+    top: -16px;
+}
+.floor-title > .floor-text {
+    font-size: 20px;
+    color: #000;
+}
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.floor-title > .floor-text > a {
+    font-size: 15px;
+    margin-left: 20px;
+}
+a.more {
+    font-size: 15px;
+    margin-bottom: 10px;
+    float: right;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #e4393c;
+    border: 1px solid #e4393c;
+}
+#F1 > li:nth-child(1), #F1 > li:nth-child(2), #F1 > li:nth-child(3) {
+    width: 23%;
+    margin-right: 14px;
+    overflow: hidden;
+    float: left;
+    transition: all .5s linear;
+}
+#F1 > li {
+    border: 1px solid #faf;
+}
+.floor li {
+    position: relative;
+}
+#F1 > li > a > img {
+    width: 100%;
+}
+ul#F1 > li > div {
+    overflow: hidden;
+}
+#F1 > li p {
+    padding-left: 5px;
+}
+ul#F1 > li > div > :first-child {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 36px;
+    overflow: hidden;
+}
+ul#F1 > li > div > div {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    height: 0 ;
+    width: 100%;
+    text-align: center;
+    transition: all .5s linear;
+}
+#F1 > li:nth-child(4), #F1 > li:nth-child(5), #F1 > li:nth-child(6), #F1 > li:nth-child(7) {
+    width: 11.9%;
+    float: right;
+    opacity: 0.85;
+    margin-left: 14px;
+}
+#F1 > li:nth-child(4) > p, #F1 > li:nth-child(5) > p, #F1 > li:nth-child(6) > p, #F1 > li:nth-child(7) > p {
+    font-size: 13px;
+}
+/*分享层*/
+.floor2-content{
+    position: relative;
+}
+.floor2-content > .floor-title {
+    position: relative;
+    width: 28%;
+}
+.floor2-content > .floor-title img {
+    width: 100%;
+}
+.floor2-content > .floor-title > div {
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    width: 186px;
+    height: 100px;
+    top: 70%;
+    left: 50%;
+    margin-left: -93px;
+    opacity: 0.85;
+}
+.floor2-content > .floor-title > div > p:first-child {
+    font-size: 20px;
+    color: #e4393c;
+}
+.floor2-content > .floor-title > div > p {
+    margin: 8px;
+}
+.floor2-content > ul {
+    width: 36%;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.floor2-content > ul > li {
+    background: #fff;
+    float: left;
+    position: relative;
+    border: 1px solid #eee;
+    padding: 5px 0;
+}
+.floor2-content > ul > li:first-child {
+    width: 49.5%;
+}
+.floor2-content > ul > li .price {
+    font-size: 15px;
+}
+/*时尚男装*/
+.floor2-content>ul {
+    width: 36%;
+    padding-top: 50px;
+    margin-left: 10px;
+}
+.floor2-content>ul>li {
+    background: #fff;
+    float: left;
+    position: relative;
+    border: 1px solid #eee;
+    padding: 5px 0;
+}
+.floor2-content>ul>li:first-child {
+    width: 49.5%;
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+	<header id="header">
+		<img src="imgs/loading.gif" alt="加载中">
+	</header>	
+	<div class="main">
+	<div class="user-center">
+			<div class="user-left">
+				<h3><i class="glyphicon glyphicon-user"></i>&nbsp;个人中心</h3>
+				<ul>
+					<li class="user-info">
+						<p class="color"><i class="glyphicon glyphicon-book"></i>&nbsp;我的资料</p>
+						<ul>
+							<li><a href="user.html">个人信息</a></li>
+							<li><a href="safety.html">安全设置</a></li>
+							<li class="active"><a href="address.html">地址管理</a></li>
+						</ul>
+					</li>
+					<li class="user-deal">
+						<p class="color"><i class="glyphicon glyphicon-check"></i>&nbsp;我的交易</p>
+						<ul>
+							<li><a href="default.htm">订单管理</a></li>
+							<li><a href="default.htm">退款售后</a></li>
+							<li><a href="default.htm">评价商品</a></li>
+						</ul>
+					</li>
+					<li class="user-store">
+						<p class="color"><i class="glyphicon glyphicon-tags"></i>&nbsp;我的蜗居</p>
+						<ul>
+							<li><a href="default.htm">我的收藏</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>
+					<li class="online-kf">
+						<p class="color"><i class="glyphicon glyphicon-comment"></i>&nbsp;在线客服</p>
+						<ul>
+							<li><a href="default.htm">商品咨询</a></li>
+							<li><a href="default.htm">意见反馈</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+			<div class="user-right">
+				<div id="user-address">
+					<h4><span>收货地址/<small>Accept Address</small></span></h4>
+					<ul>
+						<li class="clear user-base-info">
+							<div class="lf user-avatar">
+								<img src="imgs/avatar/default.png" alt="">
+							</div>
+							<div class="lf uname">
+								<p>账号名：<b>bobo</b></p>
+								<p>安全等级：<b>高</b></p>
+								<p>会员等级：<b>青铜会员</b></p>
+							</div>
+						</li>
+					</ul>
+					<div class="address-list">
+						<p>地址列表/<small>Address List</small></p>
+						<ul>
+							<li class="default">
+								<p><textarea  rows="1" disabled name="userName">杰克</textarea></p>
+								<p><textarea  rows="1" disabled name="tel">13688888888</textarea></p>
+								<p><textarea name="address" rows="2" disabled>重庆市渝北区红旗河沟嘉州协信中心A栋18楼</textarea></p>
+								<p>
+									<span class="lf is-default">默认地址</span>
+									<a href="javascript:;">设为默认 | </a>
+									<a href="javascript:;" class="edit">编辑 | </a>
+									<a href="javascript:;" class="del">删除</a>	
+								</p>
+							</li>
+							<li>
+								<p><textarea  rows="1" disabled name="userName">杰克</textarea></p>
+								<p><textarea  rows="1" disabled name="tel">13688888888</textarea></p>
+								<p><textarea name="address" rows="2" disabled>重庆市渝北区红旗河沟嘉州协信中心A栋18楼</textarea></p>
+								<p>
+									<span class="lf">默认地址</span>
+									<a href="javascript:;" class="select-default">设为默认 | </a>
+									<a href="javascript:;" class="edit">编辑 | </a>
+									<a href="javascript:;" class="del">删除</a>		
+								</p>
+							</li>
+							<li>
+								<p><textarea  rows="1" disabled name="userName">杰克</textarea></p>
+								<p><textarea  rows="1" disabled name="tel">13688888888</textarea></p>
+								<p><textarea name="address" rows="2" disabled>重庆市渝北区红旗河沟嘉州协信中心A栋18楼</textarea></p>
+								<p>
+									<span class="lf">默认地址</span>
+									<a href="javascript:;" class="select-default">设为默认 | </a>
+									<a href="javascript:;" class="edit">编辑 | </a>
+									<a href="javascript:;" class="del">删除</a>		
+								</p>
+							</li>
+							<li>
+								<p><textarea  rows="1" disabled name="userName">杰克</textarea></p>
+								<p><textarea  rows="1" disabled name="tel">13688888888</textarea></p>
+								<p><textarea name="address" rows="2" disabled>重庆市渝北区红旗河沟嘉州协信中心A栋18楼</textarea></p>
+								<p>
+									<span class="lf">默认地址</span>
+									<a href="javascript:;" class="select-default">设为默认 | </a>
+									<a href="javascript:;" class="edit">编辑 | </a>
+									<a href="javascript:;" class="del">删除</a>		
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="add-address">
+						<p>新增地址/<small>Add Address</small></p>
+						<div>
+							<p><b>收货姓名：</b><input type="text" placeholder="输入收货人姓名"></p>
+							<p><b>手机号码：</b><input type="tel" placeholder="输入手机号码"></p>
+							<p><b>收货地址：</b>
+								<select name="city" id="city">
+									<option value="0">---请选择省/市---</option>
+								</select>
+								<select name="privince" id="privince">
+									<option value="0">---请选择区/县---</option>
+								</select>
+								<br>
+								<textarea name="address" cols="66" rows="4" placeholder="输入详细地址信息：具体到县/街/镇/乡"></textarea>
+							</p>
+							<p><button class="bgcolor">保存地址</button></p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/person.js"></script>
+</body>
+</html>

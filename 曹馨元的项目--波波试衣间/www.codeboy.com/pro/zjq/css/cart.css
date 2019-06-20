@@ -1,0 +1,197 @@
+#box{
+	min-height:450px;
+}
+#shopping-cart{
+    margin-top:30px;
+}
+#shopping-cart>div.title{
+    display:flex;
+    justify-content:space-between;
+}
+#shopping-cart>div.title>b{
+    font:18px "微软雅黑";
+    font-weight:bold;
+    color:#333;
+}
+#shopping-cart .total{
+    font-size:14px;
+    padding:0 3px;
+    font-weight:bold;
+}
+.color{
+    color:#f40;
+}
+#shopping-cart .totalPrices{
+    padding-left:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+#box{
+    marin-bottom:100px;
+}
+#content-box>div.imfor-top{
+    height:36px;
+    line-height:36px;
+    margin-bottom:16px;
+    background:linear-gradient(to bottom,#f5f4f5,#e6e6e5);
+    box-shadow:3px 3px 6px #ccc;
+    border-top:1px solid #bbb;
+    margin:10px 0;
+    display:flex;
+    text-align:center;
+    color:#808080;
+}
+#content-box div.check-top{
+    width:62px;
+}
+#content-box div.product-top{
+    width:500px;
+}
+#content-box div.price-top{
+    width:142px;
+}
+#content-box div.num-top{
+    width:140px;
+}
+#content-box div.total-top{
+    width:120px;
+}
+#content-box div.del-top{
+    width:116px;
+}
+#content-box div.imfor{
+    height:90px;
+    margin-bottom:10px;
+    background:#fff;
+    border:1px solid #e8e8e8;
+    display:flex;
+    position:relative;
+}
+#content-box div.check{
+    width:62px;
+}
+#content-box div.check img{
+    position:absolute;
+    top:45px;
+    left:27px;
+}
+#content-box div.product{
+    width:500px;
+    margin-top:18px;
+}
+#content-box div.product>a{
+    float:left;
+    margin-right:5px;
+}
+#content-box div.product>span.desc{
+    width:400px;
+}
+#content-box div.product p.col{
+    margin-top:5px;
+}
+#content-box div.pro-price{
+    text-align:center;
+    width:142px;
+}
+#content-box div.product~div{
+    box-sizing:border-box;
+    border-left:1px solid #ddd;
+}
+#content-box div.pro-price p.price-desc{
+    margin-top:40px;
+    color:#666;
+    box-sizing:border-box;
+}
+#content-box div.num{
+    width:140px;
+}
+#content-box div.num span{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    border:1px solid #bbb;
+    background:#e8e8e8;
+    text-align:center;
+    line-height:24px;
+    color:#444;
+    float:left;
+	margin-top:36px;
+}
+#content-box div.num span.reduce{
+    margin-left:32px;
+}
+#content-box div.num input{
+    width:17px;
+    height:22px;
+    padding-left:9px;
+    font:12px simhei;
+    border:1px solid #bbb;
+    border-left:none;
+    border-right:none;
+    float:left;
+	margin-top:36px;
+}
+#content-box div.total-price{
+    text-align:center;
+    padding-top:40px;
+    width:120px;
+}
+#content-box div.del{
+    width:116px;
+    padding-top:40px;
+    text-align:center;
+}
+#box div.foot{
+    margin-top:30px;
+    height:42px;
+    line-height:42px;
+    background:linear-gradient(to bottom,#f5f4f5,#e6e6e5);
+    display:flex;
+    justify-content:space-between;
+}
+#box div.foot>div{
+    display:flex;
+}
+#box div.foot div.all{
+    width:60px;
+    margin-left:10px;
+    cursor:pointer;
+}
+#box div.foot div.foot-qk{
+    height:23px;
+    line-height:23px;
+    width:100px;
+    text-align:center;
+    background:#ccc;
+    color:#fff;
+    margin-left:15px;
+    cursor:pointer;
+    align-self:center;
+}
+#box div.foot div.foot-selected{
+    margin-right:15px;
+}
+#box div.foot span.totalOne{
+    font-size:14px;
+    font-weight:bold;
+    margin:0 5px;
+}
+#box div.foot-tol{
+    margin-right:15px;
+}
+#box div.foot-tol span+span{
+    color: #f40;
+    font-size:16px;
+    font-weight:bold;
+}
+#box div.foot-cash{
+    cursor:pointer;
+    width:140px;
+    height:42px;
+    line-height:42px;
+    background:linear-gradient(to bottom,#f52,#f40);
+    text-align:center;
+	color:#fff;
+    font-size:18px;
+    border-radius:2px;
+}

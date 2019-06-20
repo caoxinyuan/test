@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+	<header id="header">
+		<img src="imgs/loading.gif" alt="加载中">
+	</header>	
+	<div class="main">
+	<div class="user-center">
+			<div class="user-left">
+				<h3><i class="glyphicon glyphicon-user"></i>&nbsp;个人中心</h3>
+				<ul>
+					<li class="user-info">
+						<p class="color"><i class="glyphicon glyphicon-book"></i>&nbsp;我的资料</p>
+						<ul>
+							<li><a href="user.html">个人信息</a></li>
+							<li class="active"><a href="safety.html">安全设置</a></li>
+							<li><a href="address.html">地址管理</a></li>
+						</ul>
+					</li>
+					<li class="user-deal">
+						<p class="color"><i class="glyphicon glyphicon-check"></i>&nbsp;我的交易</p>
+						<ul>
+							<li><a href="default.htm">订单管理</a></li>
+							<li><a href="default.htm">退款售后</a></li>
+							<li><a href="default.htm">评价商品</a></li>
+						</ul>
+					</li>
+					<li class="user-store">
+						<p class="color"><i class="glyphicon glyphicon-tags"></i>&nbsp;我的蜗居</p>
+						<ul>
+							<li><a href="default.htm">我的收藏</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>
+					<li class="online-kf">
+						<p class="color"><i class="glyphicon glyphicon-comment"></i>&nbsp;在线客服</p>
+						<ul>
+							<li><a href="default.htm">商品咨询</a></li>
+							<li><a href="default.htm">意见反馈</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+			<div class="user-right">
+				<div id="user-safety">
+					<h4><span>安全设置/<small>Set Up Safety</small></span></h4>
+					<ul>
+						<li class="clear user-base-info">
+							<div class="lf user-avatar">
+								<img src="imgs/avatar/default.png" alt="">
+							</div>
+							<div class="lf uname">
+								<p>账号名：<b>bobo</b></p>
+								<p>安全等级：<b>高</b></p>
+								<p>会员等级：<b>青铜会员</b></p>
+							</div>
+						</li>
+						<li style="height:0;overflow:hidden;"><b>我的编号</b><input type="hidden" value="1" name="uid"></li>
+						<li class="log-pwd">
+							<i style="background-position:-90px -45px"></i>
+							<div>
+								<p><b>登录密码</b></p>
+								<p>为保证您购物安全，建议您定期更改密码以保护账户安全。</p>
+							</div>
+							<a href="password.html">修改</a>
+						</li>
+						<li class="log-pay">
+							<i style="background-position:0px -135px"></i>
+							<div>
+								<p><b>支付密码</b></p>
+								<p>启用支付密码功能，为您资产账户安全加把锁。</p>
+							</div>
+							<a href="setpay.html">立即启用</a>
+						</li>
+						<li class="log-tel">
+							<i style="background-position:-45px 0px"></i>
+							<div>
+								<p><b>手机验证</b></p>
+								<p>您验证的手机：<span>188XXXXXXXX </span>若已丢失或停用，请立即更换</p>
+							</div>
+							<a href="bindphone.html">换绑</a>
+						</li>
+						<li class="log-email">
+							<i style="background-position:0px -90px"></i>
+							<div>
+								<p><b>邮箱验证</b></p>
+								<p>您验证的邮箱：<span>lily@163.com </span>可用于快速找回登录密码</p>
+							</div>
+							<a href="email.html">换绑</a>
+						</li>
+						<li class="log-name">
+							<i style="background-position:-90px -90px"></i>
+							<div>
+								<p><b>实名认证</b></p>
+								<p>用于提升账号的安全性和信任级别，认证后不能修改认证信息。</p>
+							</div>
+							<a href="idcard.html">去认证</a>
+						</li>
+						<li class="log-ques">
+							<i style="background-position:-135px -45px"></i>
+							<div>
+								<p><b>安全认证</b></p>
+								<p>保护账户安全，验证您身份的工具之一。</p>
+							</div>
+							<a href="question.html">去认证</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/person.js"></script>
+</body>
+</html>

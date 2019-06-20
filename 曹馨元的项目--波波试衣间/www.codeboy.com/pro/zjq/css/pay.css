@@ -1,0 +1,189 @@
+
+h4{
+	margin:0 auto 10px;
+}
+ul>li{
+	display:inline-block;
+}
+.sure-address,.sure-express,.sure-payout,.sure-info{
+	padding:20px 0;
+	border-bottom:1px solid #ffe;
+}
+/*确认地址栏*/
+	.sure-address>h4>a{
+		display:inline-block;
+		padding:5px;
+		font-size:14px;
+		margin-left:10px;
+		background:#f40;
+		color:#fff;
+	}
+	.sure-address>ul>li{
+		width:252px;
+		height:151px;
+		padding:5px;
+		background:url(../imgs/cart/address.png) no-repeat;
+		box-sizing:border-box;
+		margin-right:15px;
+		margin-bottom:5px;
+		overflow:hidden;
+	}
+	.sure-address>ul>li.default{
+		background:url(../imgs/cart/addressd.png) no-repeat;
+	}
+	.sure-address>ul>li>p{
+		margin:3px 0;
+		
+	}
+	.sure-address>ul>li>p>textarea{
+		display:inline-block;
+		border:none;
+		font-weight:bold;
+		font-size:15px;
+		min-width:230px;
+		max-width:235px;
+		color:black;
+		background:#fff;
+		max-height:40px;
+	}
+	.sure-address>ul>li>:last-child{
+		margin-top:10px;
+		text-align:right;
+	}
+	.sure-address>ul>li>:last-child>:first-child,
+	.sure-address>ul>li>:last-child>:nth-child(2){
+		display:none;
+	}
+	.sure-address>ul>li>:last-child>:first-child.is-default{
+		padding:3px;
+		background:#ddd;
+		display:inline-block;
+	}
+	.sure-address>ul>li>:last-child>:nth-child(2).select-default{
+		display:inline-block;
+	}
+/*确认物流*/
+	.sure-express>ul>li{
+		margin-right:40px;
+		width:75px;
+		height:44px;
+		line-height:44px;
+		cursor:pointer;
+	}
+	.sure-express>ul>li.default,.sure-express>ul>li:hover{
+		background:url(../imgs/cart/expd.png) no-repeat;
+	}
+	.sure-express>ul>li>i{
+		background: transparent url(../imgs/cart/kuaidi.png) no-repeat scroll 0px 0px;
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		vertical-align: middle;
+		overflow: hidden;
+	}
+/*确定支付方式*/
+	.sure-payout>ul>li{
+		margin-right:40px;
+		height:40px;
+		cursor:pointer;
+		padding:5px;
+	}
+	.sure-payout>ul>li.default,.sure-payout>ul>li:hover{
+		background:url(../imgs/cart/payd.png) no-repeat;
+	}
+	.sure-payout>ul>li>img{
+		vertical-align: middle;
+	}
+/*	确定订单信息*/
+	.sure-info>.title{
+		background:linear-gradient(to bottom,#f5f4f5,#e6e6e5);
+		margin-bottom:10px;
+		border-top:2px solid #ccc;
+	}
+	.sure-info>.info>ul{
+		background:#fff;
+		border:2px solid #ddd;
+		margin-bottom:10px;
+		padding:10px;
+	}
+	.sure-info>.info>ul:hover{
+		background:#fca;
+	}
+	.sure-info>.title>li{
+		height:40px;
+		line-height:40px;
+		text-align:center;
+	}
+	.sure-info ul>.info-pro{
+		width:500px;
+	}
+	.sure-info ul>.info-price{
+		width:100px;
+	}
+	.sure-info ul>.info-num{
+		width:200px;
+	}
+	.sure-info ul>.info-total{
+		width:100px;
+	}
+	.sure-info ul>.info-path{
+		width:300px;
+	}
+	.sure-info>.info>ul>.info-pro>:last-child{
+		width:400px;
+		margin-right:10px;
+	}
+	.sure-info>.info>ul>.info-pro>:last-child>i{
+		font-size:14px;
+		color:black;
+		font-weight:bold;
+	}
+	.sure-info>.info>ul>li:not(:first-child){
+		text-align:center;
+		position:relative;
+		top:-15px;left:-10px;
+	}
+	.sure-info>.info>ul>.info-num>input{
+		width:30px;
+		border:2px solid #ddd;
+		height:26px;
+		position:relative;
+		top:-8px;
+		text-align:center;
+		outline:0;
+	}
+	.sure-info>p>.pay-msg{
+		padding-left:10px;
+		display:inline-block;
+		width:500px;
+		height:30px;
+		border:1px solid #ddd;
+	}
+	.sure-info>p.total{
+		font-size:15px;
+		font-family:"微软雅黑",simhei;
+		text-align:right;
+	}
+	.info-price>div:first-child{
+		width:450px;
+		height:150px;
+		border:2px solid #f40;
+		border-radius:10px;
+	}
+	.info-price>div>p{
+		margin:15px;
+		text-align:right;
+	}
+	.info-price>div>:first-child{
+		font-size:25px;
+		font-family:"微软雅黑",simhei;
+	}
+	.submitInfo{margin:10px 0 50px;}
+	.submitInfo>a{
+		width:150px;
+		height:40px;
+		line-height:40px;
+		background:#f40;
+		color:white;
+		text-align:center;
+	}

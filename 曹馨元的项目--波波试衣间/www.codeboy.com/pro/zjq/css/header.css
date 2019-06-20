@@ -1,0 +1,157 @@
+/*	最外层*/
+		.head{
+			width:1400px;
+			margin:0 auto;
+			display:flex;
+			justify-content:space-between;
+			flex:1;
+			padding:20px 120px 0px;
+			box-sizing:border-box;
+			max-height:100px;
+		}
+/*所有li标签*/
+		.head li{
+			float:left;
+			margin-left:10px;
+		}
+/*logo部分*/
+		.head .head_user{
+			position:relative;
+			top:6px;
+		}
+/*搜索部分*/
+		.head .head_search>input{
+			position:relative;
+			top:-4px;
+			font-size:16px;
+			height:28px;
+			width:540px;
+			padding:5px;
+			border:2px solid #e4393c;
+			outline:0;
+		}
+		.head .head_search img{
+			position:relative;
+			top:3px;
+			left:-40px;
+		}
+/*用户部分*/
+		.head>.head_user>ul>li:first-child>a{
+			padding:3px 6px;
+			background:#e4393c;
+			color:white;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			border:1px solid #e4393c;
+		}
+		.head>.head_user>ul>li:last-child>a{
+			padding:3px 6px;
+			background:#fff;
+			color:#e4393c;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			border:1px solid #e4393c;
+		}
+		#user{
+			position:relative;
+			top:-5px;left:-20px;
+			padding:0 20px 18px;
+		}
+		#user>img{
+			border-radius:50%;
+			width:30px;
+			border:1px solid #e4393c;
+			cursor:pointer;
+		}
+		#user>ul{
+			position:absolute;
+			top:50px;
+			transition:all .5s linear;
+			background:#fff;
+			width:120px;
+		}
+		.fade{
+			height:0;
+			overflow:hidden;
+		}
+		#user>.in.fade{
+			height:154px;
+			border-top:0;
+		}
+		#user>ul>li{
+			margin:0;
+			width:120px;
+			border-bottom:1px solid #aaa;
+			text-align:center;
+			padding:8px 0;
+		}
+		#user>ul>li.hover{
+			background:#e4393c;
+		}
+		#user>ul>li.hover>a{
+			color:#fff;
+		}
+		#user>ul>li>a{
+			font-size:15px;
+			color:#e4393c;
+		}
+/*关于我们*/
+		.head .head_us{
+			position:relative;
+			top:5px;
+		}
+		.head .head_us>ul>:first-child{
+			position:relative;
+			cursor:pointer;
+		}
+		.head .head_us ul :first-child:hover #code{
+			display:block;
+			height:140px;
+		}
+		.head .head_us ul :first-child>img{
+			position:relative;
+			top:5px;
+		}
+		.head .head_us ul :first-child>div{
+			height:0;
+			overflow:hidden;
+			position:absolute;
+			top:30px;
+			left:-20px;
+			transition:all .5s linear;
+		}
+		#about_us{
+			position:relative;
+			top:-3px;left:-20px;
+			padding:6px 18px 27px;
+			cursor:pointer;
+		}
+		#about_us>ul{
+			position:absolute;
+			top:46px;
+			transition:all .5s linear;
+			background:#fff;
+			width:90px;
+		}
+		#about_us>.in.fade{
+			height:73px;
+			border-top:0;
+		}
+		#about_us>ul>li{
+			width:90px;
+			margin:0;
+			border-bottom:1px solid #aaa;
+			text-align:center;
+			padding:8px 0;
+		}
+		#about_us>ul>li.hover{
+			background:#e4393c;
+		}
+		#about_us>ul>li.hover>a{
+			color:#fff;
+		}
+		#about_us>ul>li>a{
+			color:#e4393c;
+		}

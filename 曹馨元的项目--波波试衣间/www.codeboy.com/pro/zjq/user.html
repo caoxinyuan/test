@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+	<header id="header">
+		<img src="imgs/loading.gif" alt="加载中">
+	</header>	
+	<div class="main">
+	<div class="user-center">
+			<div class="user-left">
+				<h3><i class="glyphicon glyphicon-user"></i>&nbsp;个人中心</h3>
+				<ul>
+					<li class="user-info">
+						<p class="color"><i class="glyphicon glyphicon-book"></i>&nbsp;我的资料</p>
+						<ul>
+							<li class="active"><a href="user.html">个人信息</a></li>
+							<li><a href="safety.html">安全设置</a></li>
+							<li><a href="address.html">地址管理</a></li>
+						</ul>
+					</li>
+					<li class="user-deal">
+						<p class="color"><i class="glyphicon glyphicon-check"></i>&nbsp;我的交易</p>
+						<ul>
+							<li><a href="default.htm">订单管理</a></li>
+							<li><a href="default.htm">退款售后</a></li>
+							<li><a href="default.htm">评价商品</a></li>
+						</ul>
+					</li>
+					<li class="user-store">
+						<p class="color"><i class="glyphicon glyphicon-tags"></i>&nbsp;我的蜗居</p>
+						<ul>
+							<li><a href="default.htm">我的收藏</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>
+					<li class="online-kf">
+						<p class="color"><i class="glyphicon glyphicon-comment"></i>&nbsp;在线客服</p>
+						<ul>
+							<li><a href="default.htm">商品咨询</a></li>
+							<li><a href="default.htm">意见反馈</a></li>
+							<li><a href="default.htm">我的消息</a></li>
+						</ul>
+					</li>	
+				</ul>
+			</div>
+			<div class="user-right">
+				<form id="user-info">
+					<h4><span>个人信息/<small>Personal information</small></span></h4>
+					<ul>
+						<li class="clear user-base-info">
+							<div title="点击上传头像" class="lf user-avatar">
+								<input type="file" allowexts="jpg,png,gif,bmp,jpeg" accept="image/*" name="avatar">
+								<img src="imgs/avatar/default.png" alt="">
+							</div>
+							<div class="lf uname">
+								<p>账号名：<b>bobo</b></p>
+								<p>安全等级：<b>高</b></p>
+								<p>会员等级：<b>青铜会员</b></p>
+							</div>
+						</li>
+						<li style="height:0;overflow:hidden;"><b>我的编号</b><input type="hidden" value="1" name="uid"></li>
+						<li><b>昵称：</b><input type="text" name="nickName" value="lily"></li>
+						<li><b>生日：</b><input type="date" name="birth" value="2010-10-10"></li>
+						<li><b>邮箱：</b><input type="text" name="email" value="Lily@163.com"></li>
+						<li><b>手机号码：</b><input type="text" name="tel" value="13688866668"></li>
+						<li class="user-gender">
+							<b>性别：</b>
+							男<input type="radio" name="gender">&nbsp;女<input type="radio" name="gender">&nbsp;保密<input type="radio" name="gender" checked>&nbsp;
+						</li>
+						<li><button class="bgcolor">保存修改</button></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer id="footer">
+		<img src="imgs/loading.gif" alt="加载中">
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/person.js"></script>
+</body>
+</html>
